@@ -1,10 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import { RouterProvider } from "react-router";
-import { createBrowserRouter } from "react-router-dom";
-import RootRoute from "./routes/root";
+import { RouterProvider } from "react-router-dom";
 import router from "./router";
+import "./global.css";
 
 //@ts-expect-error - idk rsbuild is not recognizing the import
 const rootEl = document.getElementById("root");
