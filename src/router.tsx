@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import RootRoute from "./routes/root";
-import IndexRoute from "./routes";
+import IndexRoute from "~/routes";
 const router = createBrowserRouter([
 	{
 		path: "/",
