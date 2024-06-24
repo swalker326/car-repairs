@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import RootRoute from "./routes/root";
 import IndexRoute from "~/routes";
 import { AuthLoginRoute } from "./routes/auth/login";
 import { AuthCreateAccountRoute } from "./routes/auth/create-account";
 import { RepairCreateRoute } from "./routes/repair/create";
+import { Layout } from "./components/Layout";
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <RootRoute />,
+		element: <Layout />,
 		children: [
 			{ index: true, element: <IndexRoute /> },
 			{ path: "auth/login", element: <AuthLoginRoute /> },
